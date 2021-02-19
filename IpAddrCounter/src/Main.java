@@ -10,13 +10,13 @@ public class Main {
         try {
             while ((is.readLine()) != null){
                 boolean sort = true;
-                while ((is2.readLine()) != null){
-                    if(is.readLine().equals(is2.readLine())){
+                while ((is2.readLine()) != null) {
+                    if (is.readLine().equals(is2.readLine())) {
                         sort = false;
                     }
-                    if (sort){
-                        count++;
-                    }
+                }
+                if (sort){
+                    count++;
                 }
             }
             System.out.println(count);
